@@ -9,7 +9,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.216.0\Include;$(SolutionDir)headers;$(SolutionDir)external\glm;$(SolutionDir)external\glfw\include;$(SolutionDir)external\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\VulkanSDK\1.3.216.0\Include;$(SolutionDir)headers;$(SolutionDir)external\glm;$(SolutionDir)external\glfw\include;$(SolutionDir)external\spdlog\include;$(SolutionDir)external\visit_struct;$(SolutionDir)external\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <PreprocessorDefinitions>_SOLUTIONDIR=R"($(SolutionDir))";%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
