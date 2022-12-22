@@ -22,12 +22,6 @@ namespace Erupt
 		vkDestroyPipelineLayout(m_EruptDevice.Device(), m_PipelineLayout, nullptr);
 	}
 
-	void SimpleRenderSystem::Init()
-	{
-		Log::Init();
-		FileIO::Init();
-	}
-
 	void SimpleRenderSystem::CreatePipelineLayout()
 	{
 		VkPushConstantRange pushConstantRange{};
@@ -72,8 +66,8 @@ namespace Erupt
 
 		for (auto& entity : entities)
 		{
-			entity.m_Transform.rotation.y = glm::mod(entity.m_Transform.rotation.y + 0.01f, glm::two_pi<float>());
-			entity.m_Transform.rotation.x = glm::mod(entity.m_Transform.rotation.x + 0.005f, glm::two_pi<float>());
+			entity.m_Transform.m_Rotation.y = glm::mod(entity.m_Transform.m_Rotation.y + 0.01f, glm::two_pi<float>());
+			entity.m_Transform.m_Rotation.x = glm::mod(entity.m_Transform.m_Rotation.x + 0.005f, glm::two_pi<float>());
 
 			SimplePushConstantData push{};
 			push.color = entity.m_Color;

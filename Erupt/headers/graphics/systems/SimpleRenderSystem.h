@@ -12,8 +12,6 @@ namespace Erupt
 		SimpleRenderSystem(EruptDevice& device, VkRenderPass renderPass);
 		~SimpleRenderSystem();
 
-		static void Init();
-		
 		void RenderEntities(VkCommandBuffer commandBuffer, std::vector<Entity>& entities);
 
 	private:
